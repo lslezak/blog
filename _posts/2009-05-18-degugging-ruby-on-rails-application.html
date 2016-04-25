@@ -1,0 +1,16 @@
+---
+layout: post
+title: Debugging Ruby on Rails Application
+date: '2009-05-18T03:58:00.000-07:00'
+author: Ladislav Slezák
+tags:
+- debug
+- ruby
+- debugging
+- ruby on rails
+modified_time: '2010-09-16T07:00:06.405-07:00'
+blogger_id: tag:blogger.com,1999:blog-6535501136403374362.post-2218427041882498741
+blogger_orig_url: http://lslezak.blogspot.com/2009/05/degugging-ruby-on-rails-application.html
+---
+
+<span style="font-size:100%;"><span style="font-size:130%;">How to debug a Ruby on Rails application?</span><br /><br />I needed to debug a Ruby on Rails application which I just have started to develop. I put some logging commands to the code but it's not as good as using a full debugger for inspecting internal data at runtime.<br /><br /><span style="font-size:130%;">What's needed?</span><br /><br />For debugging a Rails application <span style="font-weight: bold;font-family:courier new;" >ruby-debug</span> gem is needed. It can be installed by command <span style="font-weight: bold;">sudo gem install ruby-debug</span> in Linux or as a package from an installation repository.<br /><br /><span style="font-size:130%;">How to start the debugger?</span><br /><br />At first, the place in the application where the debugger should be started must be marked by <span style="font-weight: bold;">debugger</span> keyword.<br /><br />Then the application must be started in the debugger - it's simple, just use </span><span style="font-size:100%;"><span style="font-weight: bold;font-family:courier new;" >--debugger</span> option of the starting script, e.g. </span><span style="font-size:100%;"><span style="font-weight: bold;font-family:courier new;" >script/server --debugger</span></span>.<span style="font-size:100%;"><br /><br /><span style="font-size:130%;">How to use the debugger?</span><br /><br />When the application executes </span><span style="font-size:100%;"><span style="font-weight: bold;">debugger</span></span><span style="font-size:100%;"> command it stops and a debugger session is opened in the terminal.<br /><br />It supports these basic commands:<br />l (<span style="font-weight: bold;">line</span>) - print the source script<br />c (<span style="font-weight: bold;">continue</span>) - stop the debug session at continue executing the application<br />bt (<span style="font-weight: bold;">backtrace</span>) - print the execution stack (which functions were called)<br />n (<span style="font-weight: bold;">next</span>) - execute the next command<br />s (<span style="font-weight: bold;">step</span>) - execute the next command, step inside a function<br />h (<span style="font-weight: bold;">help</span>) - will list more available commands with details<br /><br />Moreover it's possible to use normal ruby commands to print or inspect the current objects, using e.g. <span style="font-weight: bold;">object.class</span>, <span style="font-weight: bold;">objec.inspect</span> methods. And it's also possible to modify the current variables, just use <span style="font-weight: bold;">var = value</span> command.<br /><br />This makes the debugger really powerful, it's far better than simple <span style="font-weight: bold;">puts</span> command!<br /><br /></span>
