@@ -16,16 +16,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lslezak.github.io" # the base hostname & protocol for your site
 github_username:  lslezak
 
-# Build settings
-markdown: kramdown
-
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: 'highlight'
   hard_wrap: false
 
 # generate sitemap.xml and feed.xml automatically by plugins
