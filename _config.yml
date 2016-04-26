@@ -16,6 +16,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lslezak.github.io" # the base hostname & protocol for your site
 github_username:  lslezak
 
+# see http://kramdown.gettalong.org/syntax.html for the format specification
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
