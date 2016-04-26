@@ -22,6 +22,8 @@ kramdown:
   input: GFM
   hard_wrap: false
 
+permalink: pretty
+
 # generate sitemap.xml and feed.xml automatically by plugins
 gems:
   - jekyll-sitemap
