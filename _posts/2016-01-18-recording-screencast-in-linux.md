@@ -42,10 +42,10 @@ ffmpeg -f pulse -i default -video_size x -framerate 15 -f x11grab -i :0.0+<width
 
 See these links for more details:
 
-  - https://trac.ffmpeg.org/wiki/Capture/Desktop
-  - https://trac.ffmpeg.org/wiki/Encode/VP8
-  - https://www.ffmpeg.org/ffmpeg-devices.html#x11grab
-  - http://www.lxtips.com/2011/07/single-window-screen-capture-script.html
+  - <https://trac.ffmpeg.org/wiki/Capture/Desktop>
+  - <https://trac.ffmpeg.org/wiki/Encode/VP8>
+  - <https://www.ffmpeg.org/ffmpeg-devices.html#x11grab>
+  - <http://www.lxtips.com/2011/07/single-window-screen-capture-script.html>
 
 ### Animated Image
 
@@ -64,7 +64,7 @@ uncomfortable...
 Then I found the `byzanz` tool. It's by default available to install in the
 openSUSE distribution, simply run: 
 
-```shell
+```
 sudo zypper in byzanz xwininfo
 ```
 
@@ -80,7 +80,7 @@ helper script.
 
 You can install it locally via these commands:
 
-```shell
+```
 cd ~/bin
 wget https://gist.githubusercontent.com/lucy/3042755/raw/eda2b85b51779affbc392a2bb3f1b60ed5fe98ff/byzanz-record-window
 chmod a+x byzanz-record-window
@@ -95,7 +95,7 @@ cursor, etc...).
 
 So the final recording command would look like this:
 
-```shell
+```
 byzanz-record-window --delay=3 --duration=5 screencast.gif
 ```
 

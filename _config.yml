@@ -32,3 +32,9 @@ kramdown:
 gems:
   - jekyll-sitemap
   - jekyll-feed
+
+# exclude some files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
