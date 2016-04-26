@@ -3,11 +3,15 @@
 ---
 @charset "utf-8";
 
+// import Google fonts
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro|Cousine|Open+Sans+Condensed:700);
 
+$base-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$header-font-family: "Open Sans Condensed", Helvetica, Arial, sans-serif;
+$mono-font-family: "Cousine", monospace;
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
+// normal
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -20,15 +24,13 @@ $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark:  darken($grey-color, 5%);
 
 // Width of the content area
 $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
-
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -42,8 +44,6 @@ $on-laptop:        800px;
         @content;
     }
 }
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

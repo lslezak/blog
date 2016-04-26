@@ -18,7 +18,6 @@ github_username:  lslezak
 
 # Build settings
 markdown: kramdown
-permalink:   /:title/
 
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
@@ -28,3 +27,8 @@ kramdown:
   syntax_highlighter_opts:
     css_class: 'highlight'
   hard_wrap: false
+
+# generate sitemap.xml and feed.xml automatically by plugins
+gems:
+  - jekyll-sitemap
+  - jekyll-feed

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Recording a screencast in Linux
-tags: screencast
+tags:
+  - screencast
 ---
 
 # Screencasts
