@@ -4,7 +4,13 @@
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    background-image: url(/images/page_header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 150px;
+    max-height: 220px;
+    padding-top: 20px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -12,15 +18,13 @@
 
 .site-title {
     font-family: $header-font-family;
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 52px;
     line-height: 56px;
     margin-bottom: 0;
     float: left;
-
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: black; // $grey-color-dark;
     }
 }
 

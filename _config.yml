@@ -22,7 +22,7 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-permalink: pretty
+permalink: /:year/:month/:day/:title/
 
 # generate sitemap.xml and feed.xml automatically by plugins
 gems:
