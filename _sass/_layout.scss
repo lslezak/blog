@@ -24,7 +24,7 @@
   }
   &:hover {
     text-decoration: none;
-    color: darken($title-color, 10%);
+    color: $brand-color;
   }
 }
 .site-nav {
@@ -89,8 +89,9 @@
  */
 
 .site-footer {
-  border-top: 3px dotted $grey-color-light;
+  border-top: 1px solid #C0D9F6;
   padding: $spacing-unit 0;
+  background-color: #E9F2FC;
 }
 
 .footer-heading {
@@ -228,5 +229,50 @@
     @include media-query($on-laptop) {
       font-size: 18px;
     }
+  }
+}
+
+.sharing {
+  text-align: center;
+}
+
+.sharing-list {
+  li {
+    display: inline;
+    list-style: none;
+    margin-left: 10px;
+  }
+}
+
+.sharing-button {
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 4px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.google-button {
+  background-color: $google-button;
+  color: white;
+  &:hover {
+    background-color: lighten($google-button, 10%);
+  }
+}
+
+.twitter-button {
+  background-color: $twitter-button-color;
+  color: white;
+  &:hover {
+    background-color: lighten($twitter-button-color, 10%);
+  }
+}
+
+.facebook-button {
+  background-color: $facebook-button-color;
+  color: white;
+  &:hover {
+    background-color: lighten($facebook-button-color, 10%);
   }
 }

@@ -77,7 +77,6 @@ li {
 }
 
 
-
 /**
  * Headings
  */
@@ -106,10 +105,9 @@ a {
 }
 
 time {
-//  border: 1px solid #e8e8e8;
   border-radius: 6px;
   color: $background-color;
-  background-color: $grey-color;
+  background-color: #2a7ae2;
   padding: 4px;
 }
 
@@ -138,9 +136,9 @@ pre,
 code {
     font-family: $mono-font-family;
     font-size: 13px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid #E9F2FC;
     border-radius: 4px;
-    background-color: $grey-color-light;
+    background-color: #E9F2FC;
 }
 
 code {

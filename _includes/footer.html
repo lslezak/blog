@@ -8,16 +8,21 @@
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>{{ site.title }}</li>
-          {% if site.github_username %}
           <li>
-            <span class="fa fa-github fa-lg fa-fw"></span>
-            <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a>
+            <span class="fa fa-rss fa-fw"></span>
+            <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
           </li>
-          {% endif %}
-
           <li>
-            <span class="fa fa-envelope-o fa-lg fa-fw"></span>
-            <a href="mailto:{{ site.email }}"> {{ site.email }}</a>
+            <span class="fa fa-github fa-fw"></span>
+            <a href="https://github.com/{{ site.github_username }}">GitHub Profile</a>
+          </li>
+          <li>
+            <span class="fa fa-google fa-fw"></span>
+            <a href="https://www.google.com/+LadislavSlez%C3%A1k">Google+ Profile</a>
+          </li>
+          <li>
+            <span class="fa fa-envelope-o fa-fw"></span>
+            <a href="mailto:{{ site.email }}">E-mail</a>
           </li>
         </ul>
       </div>
