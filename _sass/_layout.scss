@@ -236,6 +236,11 @@
   text-align: center;
 }
 
+.sharing-header {
+  font-style: italic;
+  font-size: 13px;
+}
+
 .sharing-list {
   li {
     display: inline;
@@ -259,6 +264,9 @@
   &:hover {
     background-color: lighten($google-button, 10%);
   }
+  &:visited {
+    color: white;
+  }
 }
 
 .twitter-button {
@@ -267,6 +275,9 @@
   &:hover {
     background-color: lighten($twitter-button-color, 10%);
   }
+  &:visited {
+    color: white;
+  }
 }
 
 .facebook-button {
@@ -274,5 +285,8 @@
   color: white;
   &:hover {
     background-color: lighten($facebook-button-color, 10%);
+  }
+  &:visited {
+    color: white;
   }
 }
