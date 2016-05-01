@@ -234,14 +234,17 @@
 
 .sharing {
   text-align: center;
+  margin: 4em 0 1em 0;
 }
 
 .sharing-header {
   font-style: italic;
   font-size: 13px;
+  margin: 10px;
 }
 
 .sharing-list {
+  margin: 0;
   li {
     display: inline;
     list-style: none;
