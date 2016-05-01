@@ -290,3 +290,14 @@
     color: white;
   }
 }
+
+.pinterest-button {
+  background-color: $pinterest-button-color;
+  color: white;
+  &:hover {
+    background-color: lighten($pinterest-button-color, 10%);
+  }
+  &:visited {
+    color: white;
+  }
+}
