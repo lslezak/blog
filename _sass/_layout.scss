@@ -232,6 +232,10 @@
   }
 }
 
+.meta-item {
+  margin-right: 10px;
+}
+
 .sharing {
   text-align: center;
   margin: 4em 0 1em 0;
@@ -254,8 +258,8 @@
 
 .sharing-button {
   font-size: 13px;
-  padding: 5px;
-  border-radius: 4px;
+  padding: 4px 8px;
+  border-radius: 6px;
   &:hover {
     text-decoration: none;
   }

@@ -5,7 +5,35 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="post-meta">
+      <span class="meta-item">
+        <span class="fa fa-calendar fa-fw"></span>
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      </span>
+
+      {% if page.author %}
+        <span class="meta-item">
+          <span class="fa fa-user fa-fw"></span>
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+        </span>
+      {% endif %}
+
+      {% if page.category %}
+        <span class="meta-item">
+          <span class="fa fa-bookmark fa-fw"></span>
+          <span class="category" title="Category">{{ page.category }}</span>
+        </span>
+      {% endif %}
+
+      {% if page.tags %}
+        <span class="meta-item">
+          <span class="fa fa-tags fa-fw"></span>
+          {% for tag in page.tags %}
+            <span class="tag"><a href="/tags/#{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %},{% endunless %}</span>
+          {% endfor %}
+        </span>
+      {% endif %}
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
