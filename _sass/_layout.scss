@@ -308,3 +308,13 @@
     color: white;
   }
 }
+
+.tag-cloud {
+  line-height: normal;
+  margin-bottom: 50px;
+  li {
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+  }
+}
