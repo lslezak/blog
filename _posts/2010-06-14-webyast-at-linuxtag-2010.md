@@ -1,7 +1,8 @@
 ---
 layout: post
 title: WebYaST at Linuxtag 2010
-tags: [ webyast, linuxtag ] 
+category: Misc
+tags: [ conference, webyast ]
 ---
 
 ### LinuxTag - June 9-12, 2010
