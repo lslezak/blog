@@ -1,0 +1,12 @@
+
+.image-wrapper {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 85%;
+
+  .image-caption {
+    font-style: italic;
+    margin: 8px 15%;
+    color: $grey-color;
+  }
+}

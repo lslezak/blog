@@ -152,25 +152,30 @@ game port joysticks it reports also the sound card to which it is attached to.
 The changes in the YaST module are best described by the following screen shots.
 Let's start with the old YaST module:  
 
-![](http://3.bp.blogspot.com/-PfM1ymwGhKE/TpQDao-sakI/AAAAAAAAABY/H_uumPY-62I/s200/YaST_joystick_old1.png)
-The old YaST module with one configured Gameport joystick
+{% include image.html
+  imgurl="http://3.bp.blogspot.com/-PfM1ymwGhKE/TpQDao-sakI/AAAAAAAAABY/H_uumPY-62I/s200/YaST_joystick_old1.png"
+  caption="The old YaST module with one configured Gameport joystick." %}
 
-![](http://2.bp.blogspot.com/-5-0_QCFkskA/TpQDbTdSvbI/AAAAAAAAABo/LtvYWykRecs/s200/YaST_joystick_old3.png)
-When the computer doesn't have any game port the old module displayed just this message although an USB joystick could be attached.
+{% include image.html
+  imgurl="http://2.bp.blogspot.com/-5-0_QCFkskA/TpQDbTdSvbI/AAAAAAAAABo/LtvYWykRecs/s200/YaST_joystick_old3.png"
+  caption="When the computer doesn't have any game port the old module displayed just this message although an USB joystick could be attached." %}
 
-![](http://3.bp.blogspot.com/-h0CcCPHJ3xY/TpQDax7VqJI/AAAAAAAAABg/8YP_VE3_ppk/s200/YaST_joystick_old2.png)
-Old joystick test dialog, notice the wrong number of buttons and axes, also
-using progress bars is not appropriate for this dialog.
+{% include image.html
+  imgurl="http://3.bp.blogspot.com/-h0CcCPHJ3xY/TpQDax7VqJI/AAAAAAAAABg/8YP_VE3_ppk/s200/YaST_joystick_old2.png"
+  caption="Old joystick test dialog, notice the wrong number of buttons and axes, also
+using progress bars is not appropriate for this dialog." %}
 
 Here is the new updated YaST module:  
 
-![](http://3.bp.blogspot.com/-PZgqn39NTF4/TpQDy1lUbgI/AAAAAAAAABw/EadgYXD7-xs/s200/YaST_joystick_new3.png)
-Both USB and Gameport joysticks are displayed with more details
+{% include image.html
+  imgurl="http://3.bp.blogspot.com/-PZgqn39NTF4/TpQDy1lUbgI/AAAAAAAAABw/EadgYXD7-xs/s200/YaST_joystick_new3.png"
+  caption="Both USB and Gameport joysticks are displayed with more details" %}
 
-![](http://2.bp.blogspot.com/-VPzNx9LMU0k/TpQDaA9F9AI/AAAAAAAAABQ/k-jrKbPU7DQ/s200/YaST_joystick_new2.png)
-The testing dialog has been improved - button and axes detection is correct,
+  {% include image.html
+    imgurl="http://2.bp.blogspot.com/-VPzNx9LMU0k/TpQDaA9F9AI/AAAAAAAAABQ/k-jrKbPU7DQ/s200/YaST_joystick_new2.png"
+    caption="The testing dialog has been improved - button and axes detection is correct,
 sliders are used instead of progress bars and also the joystick name is
-displayed (usefull when there are more joysticks attached).
+displayed (usefull when there are more joysticks attached)." %}
 
 This is quite a nice change, isn't it?  
 

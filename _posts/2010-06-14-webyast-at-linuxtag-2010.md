@@ -6,12 +6,13 @@ tags: [ webyast, linuxtag ]
 
 ### LinuxTag - June 9-12, 2010
 
-![](http://3.bp.blogspot.com/_bXo5IecJ3Ag/TCTBLFxcbZI/AAAAAAAAAAU/nKWwg9M1hMI/s1600/linuxtag_gentoo_centos_mandriva.jpg)  
-<small>_Gentoo, CentOS, Mandriva..._</small>
-
 This year I took part of the LinuxTag event in Berlin. It is the biggest Linux
 and Open Source event in Germany and probably in Europe.
 [See more details here.](http://www.linuxtag.org/2010/en.html)  
+
+{% include image.html
+  imgurl="http://3.bp.blogspot.com/_bXo5IecJ3Ag/TCTBLFxcbZI/AAAAAAAAAAU/nKWwg9M1hMI/s1600/linuxtag_gentoo_centos_mandriva.jpg"
+  caption="Gentoo, CentOS, Mandriva..." %}
 
 #### Booths
 
@@ -19,8 +20,9 @@ There were many booths at the event, every major distribution like openSUSE,
 Gentoo, Ubuntu... had a booth were users could try the latest version and talk
 with the developers.
 
-![](http://2.bp.blogspot.com/_bXo5IecJ3Ag/TCTFPR2ueOI/AAAAAAAAAAs/y9BpPrTsbUI/s1600/linuxtag_opensuse.jpg)  
-<small>_... and of course openSUSE!_</small>
+{% include image.html
+  imgurl="http://2.bp.blogspot.com/_bXo5IecJ3Ag/TCTFPR2ueOI/AAAAAAAAAAs/y9BpPrTsbUI/s1600/linuxtag_opensuse.jpg"
+  caption="... and of course openSUSE!" %}
 
 And you could also meet people from interesting projects like KDE, FFmpeg,
 XBMC and so on. I found interesting the demos which showed Linux in embedded
@@ -34,8 +36,9 @@ your customized DVD Ubuntu image. You can add a software bundle which is not
 included in Ubuntu by default. So you don't have to search for additional
 repositories and install packages from them.  
 
-![](http://1.bp.blogspot.com/_bXo5IecJ3Ag/TCTBXHLS_TI/AAAAAAAAAAk/6kyIngavwcM/s1600/linuxtag_embedded_linux.jpg)  
-<small>_Embedded Linux: here you could see Linux running in various devices_</small>
+{% include image.html
+  imgurl="http://1.bp.blogspot.com/_bXo5IecJ3Ag/TCTBXHLS_TI/AAAAAAAAAAk/6kyIngavwcM/s1600/linuxtag_embedded_linux.jpg"
+  caption="Embedded Linux: here you could see Linux running in various devices" %}
 
 It's somewhat similar to [SUSE Studio](http://susestudio.com/), but with less
 features and targeted to Ubuntu users.  
