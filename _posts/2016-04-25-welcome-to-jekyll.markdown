@@ -22,6 +22,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 Links
 
+* <https://superdevresources.com/image-caption-jekyll/>
 * <https://domchristie.github.io/to-markdown/>
 * <https://import.jekyllrb.com/docs/blogger/>
 * <http://blog.meinside.pe.kr/Adding-tag-cloud-and-archives-page-to-Jekyll/>
