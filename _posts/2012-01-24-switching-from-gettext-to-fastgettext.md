@@ -2,7 +2,7 @@
 layout: post
 title: Switching from Gettext to FastGettext in a Rails3 app
 category: Programming
-tags: [ Ruby ]
+tags: [ ruby ]
 ---
 
 # From Gettext to FastGettext

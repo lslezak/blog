@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '"New Installer" Details Have Been Published'
-tags: [yast]
+tags: [ yast ]
 ---
 
 The details, mentioned in the previous, blog post have been published in the

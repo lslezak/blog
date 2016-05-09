@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Renaming a Rake task
-tags:
-- ruby
-- rake
+tags: [ rake ]
 ---
 
 Rake has a class for creating packaging task which builds a compressed package

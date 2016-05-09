@@ -2,9 +2,7 @@
 layout: post
 title: Debugging Ruby on Rails Application
 category: Programming
-tags:
-- debugging
-- ruby on rails
+tags: [ debugging, ruby ]
 ---
 
 # How to debug a Ruby on Rails application?

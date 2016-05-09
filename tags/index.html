@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /tags/
+onload: "filter_tags()"
 ---
 <div class="tag-list">
   <h3><span class="fa fa-tags fa-fw"></span> All Tags</h3>
@@ -8,7 +9,7 @@ permalink: /tags/
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
   <li class="tag-cloud-item" style="font-size: {{ tag | last | size | times: 1000 | divided_by: site.tags.size | plus: 50  }}%">
-    <a href="#{{ tag | first | slugize }}">{{ tag | first }}</a>
+    <a href="#{{ tag | first | slugize }}" onclick="filter_tags('{{ tag | first | slugize }}');">{{ tag | first }}</a>
   </li>
 {% endfor %}
 </ul>
@@ -16,10 +17,10 @@ permalink: /tags/
 
 <div class="tag-list">
 {% for tag in tags %}
-  <div class="tag-group">
-    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+  {% capture tag_name %}{{ tag | first }}{% endcapture %}
+  <div class="tag-group" id="{{ tag_name | slugize }}">
     <a name="{{ tag_name | slugize }}"></a>
-    <h4 id="#{{ tag_name | slugize }}"><span class="fa fa-tag fa-fw"></span> {{ tag_name }}</h4>
+    <h4><span class="fa fa-tag fa-fw"></span> {{ tag_name }}</h4>
     {% for post in site.tags[tag_name] %}
     <div class="tag-link">
       <a href="{{ root_url }}{{ post.url }}">{{post.title}}</a>
@@ -28,3 +29,23 @@ permalink: /tags/
   </div>
 {% endfor %}
 </div>
+
+<script type="text/javascript">
+  // filther the tags to display
+  function filter_tags(tag) {
+    // tag from the argument or the current URL
+    var current_tag = tag || document.location.hash.substring(1);
+    // console.log("Current tag: " + current_tag);
+
+    var x = document.getElementsByClassName("tag-group");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      var display = "";
+
+      if (tag != undefined) {
+        display = (x[i].id == current_tag) ? "" : "none";
+      }
+      x[i].style.display = display;
+    }
+  }
+</script>

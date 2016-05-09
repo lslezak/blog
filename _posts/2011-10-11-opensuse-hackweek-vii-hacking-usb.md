@@ -1,14 +1,7 @@
 ---
 layout: post
 title: OpenSUSE Hackweek VII - Hacking USB Joysticks in YaST
-date: '2011-10-11T03:57:00.000-07:00'
-author: Ladislav Slezák
-tags:
-- yast hwinfo usb gameport joystick
-modified_time: '2011-10-11T05:20:07.296-07:00'
-thumbnail: http://3.bp.blogspot.com/-PfM1ymwGhKE/TpQDao-sakI/AAAAAAAAABY/H_uumPY-62I/s72-c/YaST_joystick_old1.png
-blogger_id: tag:blogger.com,1999:blog-6535501136403374362.post-4020151796715603823
-blogger_orig_url: http://lslezak.blogspot.com/2011/10/opensuse-hackweek-vii-hacking-usb.html
+tags: [ yast, joystick ]
 ---
 
 ## Introduction

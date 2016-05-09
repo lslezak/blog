@@ -2,7 +2,7 @@
 layout: post
 title: openSUSE Conference 2010
 category: Misc
-tags: [conference]
+tags: [ conference, webyast ]
 ---
 
 # The openSUSE Conference 2010

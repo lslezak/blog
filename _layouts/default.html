@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body{% if page.onload %} onload="{{ page.onload }}" {% endif %}>
 
     {% include header.html %}
 

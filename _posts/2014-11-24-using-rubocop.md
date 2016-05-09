@@ -2,7 +2,7 @@
 layout: post
 title: Using Rubocop
 category: Programming
-tags: [ Ruby ]
+tags: [ ruby ]
 ---
 
 ## Introduction
