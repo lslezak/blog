@@ -26,6 +26,7 @@ Links
 * <https://domchristie.github.io/to-markdown/>
 * <https://import.jekyllrb.com/docs/blogger/>
 * <http://blog.meinside.pe.kr/Adding-tag-cloud-and-archives-page-to-Jekyll/>
+* <http://mattgemmell.com/page-specific-assets-with-jekyll/>
 
 
 [jekyll-docs]: http://jekyllrb.com/docs/home
