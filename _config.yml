@@ -6,7 +6,7 @@ email: lad.slezak@gmail.com
 description: >
   This is my personal blog about Linux, programming and related stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://lslezak.github.io" # the base hostname & protocol for your site
+url: "http://blog.ladslezak.cz" # the base hostname & protocol for your site
 github_username:  lslezak
 
 # see http://kramdown.gettalong.org/syntax.html for the format specification
@@ -27,6 +27,7 @@ gems:
 
 # exclude some files
 exclude:
+  - CNAME
   - Gemfile
   - Gemfile.lock
   - README.md
