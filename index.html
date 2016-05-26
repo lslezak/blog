@@ -3,13 +3,18 @@ layout: default
 ---
 
 <div class="home">
-
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">
+          <span class="fa fa-calendar fa-fw"></span>
+          {{ post.date | date: "%b %-d, %Y" }}
+          {% if post.category %}
+            — <span class="category" title="Category"> <a href="/categories/#{{ page.category|slugize }}">{{ post.category }}</a></span>
+          {% endif %}
+        </span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
