@@ -45,6 +45,10 @@ onload: "filter_tags()"
       if (tag != undefined) {
         display = (x[i].id == current_tag) ? "" : "none";
       }
+      else if (current_tag != undefined) {
+        display = (x[i].id == current_tag) ? "" : "none";
+      }
+
       x[i].style.display = display;
     }
   }
