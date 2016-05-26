@@ -1,0 +1,55 @@
+---
+layout: page
+permalink: /categories/
+onload: "filter_tags()"
+---
+<div class="tag-list">
+  <h3><span class="fa fa-bookmark fa-fw"></span> Categories</h3>
+<ul class="tag-cloud">
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+  <li class="tag-cloud-item" style="font-size: {{ category | last | size | times: 100 | divided_by: site.categories.size | plus: 50  }}%">
+    <a href="#{{ category | first | slugize }}" onclick="filter_tags('{{ category | first | slugize }}');">{{ category | first }}</a>
+  </li>
+{% endfor %}
+</ul>
+</div>
+
+<div class="tag-list">
+{% for category in categories %}
+  {% capture category_name %}{{ category | first }}{% endcapture %}
+  <div class="tag-group" id="{{ category_name | slugize }}">
+    <a name="{{ category_name | slugize }}"></a>
+    <h4><span class="fa fa-bookmark fa-fw"></span> {{ category_name }}</h4>
+    {% for post in site.categories[category_name] %}
+    <div class="tag-link">
+      <a href="{{ root_url }}{{ post.url }}">{{post.title}}</a>
+    </div>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>
+
+<script type="text/javascript">
+  // filther the tags to display
+  function filter_tags(category) {
+    // tag from the argument or the current URL
+    var current_category = category || document.location.hash.substring(1);
+    console.log("Current category: " + current_category);
+    console.log("Category: " + category);
+
+    var x = document.getElementsByClassName("tag-group");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      var display = "";
+
+      if (category != undefined) {
+        display = (x[i].id == current_category) ? "" : "none";
+      }
+      else if (current_category != undefined) {
+        display = (x[i].id == current_category) ? "" : "none";
+      }
+      x[i].style.display = display;
+    }
+  }
+</script>

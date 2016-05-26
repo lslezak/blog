@@ -21,7 +21,7 @@ layout: default
       {% if page.category %}
         <span class="meta-item">
           <span class="fa fa-bookmark fa-fw"></span>
-          <span class="category" title="Category">{{ page.category }}</span>
+          <span class="category" title="Category"><a href="/categories/#{{ page.category|slugize }}">{{ page.category }}</a></span>
         </span>
       {% endif %}
 
