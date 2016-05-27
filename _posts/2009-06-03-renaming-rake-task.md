@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Renaming a Rake task
+category: Programming
 tags: [ rake ]
 ---
 

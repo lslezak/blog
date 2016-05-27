@@ -1,6 +1,7 @@
 ---
 layout: post
 title: '"New Installer" Details Have Been Published'
+category: Misc
 tags: [ yast ]
 ---
 

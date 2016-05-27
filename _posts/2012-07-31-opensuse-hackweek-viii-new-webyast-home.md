@@ -1,6 +1,7 @@
 ---
 layout: post
 title: OpenSUSE Hackweek VIII - New WebYaST home page
+category: Programming
 tags: [ webyast ]
 ---
 

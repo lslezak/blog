@@ -1,6 +1,7 @@
 ---
 layout: post
 title: OpenSUSE Hackweek VII - Hacking USB Joysticks in YaST
+category: Programming
 tags: [ yast, joystick ]
 ---
 
