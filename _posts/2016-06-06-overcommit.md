@@ -134,7 +134,9 @@ action in the registration repository:
 
 ![Overcommit screencast](/images/overcommit_screencast.gif)
 
-It looks nice, isn't it?
+It looks nice, isn't it? (If you like the git status in the bash prompt
+check this [older post](
+{% post_url 2015-02-09-git-status-in-bash-prompt-bash-git %})).
 
 ## Conclusion
 
