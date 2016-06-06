@@ -144,7 +144,7 @@ footer {
 .footer-copy {
   color: lighten($grey-color, 20%);
   text-align: center;
-  
+
   a {
     &,
     &:visited,
@@ -237,6 +237,16 @@ footer {
     @include media-query($on-laptop) {
       font-size: 18px;
     }
+  }
+}
+
+.post-description {
+  font-style: italic;
+}
+
+.post-list {
+  h2 {
+    margin-bottom: 0;
   }
 }
 
