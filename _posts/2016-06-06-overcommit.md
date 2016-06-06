@@ -142,4 +142,4 @@ check this [older post](
 
 It looks very promising and it could catch some obvious mistakes early, I will
 give it a try. I will try using it for some time and then we will see if it
-could used in YaST more widely.
+could be used in YaST more widely.
