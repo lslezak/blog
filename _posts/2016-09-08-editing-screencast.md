@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing a screencast in Gimp
+title: Editing a Screencast in Gimp
 category: Linux
 tags: [ screencast ]
 ---
