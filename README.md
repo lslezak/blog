@@ -1,6 +1,9 @@
 
 # My Blog
 
+[![Build Status](https://travis-ci.org/lslezak/blog.svg?branch=master)](
+https://travis-ci.org/lslezak/blog)
+
 This is my personal blog, it is published at https://blog.ladslezak.cz/.
 
 ## How To Generate the Pages locally
