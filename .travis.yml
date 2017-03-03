@@ -1,0 +1,29 @@
+
+# no need for sudo, use the container based build for faster boot
+sudo: false
+
+language: ruby
+rvm:
+  - 2.2
+
+# addons:
+#   apt:
+#     packages:
+#     - npm
+
+env:
+  # nokogiri speed up: use the system libxml2, do not compile the bundled version
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=1
+
+# before_install:
+#   - npm install firebase
+
+script:
+  - bundle exec jekyll build
+
+deploy:
+  provider: firebase
+  token:
+    secure: "L5yY0jrHSIJnaRuKY7kSJNIOdrk+siZUEt2aLkxrF4DiJFByFyO2YT1D5zXfA5YWZNPWbVDT4riVwV2OV7cyyyQVVHU0OXwN6jb0Gct53PyNTgcBNBlWcf2NcjZWlWxtvwnsCff/P+1xL/4nUEQzb6UtsfjuyECWSjBeemzRo+xyTwOLLjlewFU1a8IgAJ+wjgOjH36Qlh3FYdGVfzazmEJ2tXpo/CFMcKZ9SRCgRcHH6fsn0Zpi6LoUPN0gXpK6CXLD8x3nQd1SU/owisIF1GnYgFV3w/JrvPZLx2UB9P6LLBsgdv6Gi5hzjKd/m2CkRZ6PGQRqxMBpNbLhaRCPyksI8N1yBwEcwb/XBICimo987+AcqwjvUwsbCdhiwwVXLxtmswcVXJ2uIwZb8pWXrok4WkvqGuIrQ0ln3ylOYz74/AOIwz8y2RY2chmswzJLh2iofiFiEd8E5q4I2QlMK7BtmNdPMf5XtXSljnpITAKbRXl42dFzhPqOtihxyH7gXKrf2uJ/8LdNXgaMYtm7vsSX9c1ldYyv65JjKjjfQ5cp9XJJAVJdT84nk7sQt+aKTnlkCUcFy149GOluPd7xmL5lpIafazhDr8nYWgq+PWYaBb3ztv1tyYo03lkFtgNWa1mBBcPADbQ3doaxRMFnRw1klLKtQY0LW/+zWuAVRKg="
+  on:
+    branch: master
