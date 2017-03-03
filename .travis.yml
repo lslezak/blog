@@ -6,22 +6,15 @@ language: ruby
 rvm:
   - 2.2
 
-# addons:
-#   apt:
-#     packages:
-#     - npm
-
 env:
   # nokogiri speed up: use the system libxml2, do not compile the bundled version
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=1
-
-# before_install:
-#   - npm install firebase
 
 script:
   - bundle exec jekyll build
 
 deploy:
+  skip_cleanup: true
   provider: firebase
   token:
     secure: "S12LuRc4WWGrVOzoo+V7gDS/2/8d1VCdBLCY/v5tyQ0Tq8InS8OPtel6TBgamKOhVNmq85OQ9gHuQv5JLrr7iytqs3dQtauPe6JCE8xL/zgBDJtaX/SglHl5Nzgi+unDrkIjK/NShAk/VUhQvYJfi53+U96k6oMV6OVnkUDHC2jI14/NCW+3HkB23k/zlrGhpKGyyfPMKHmHFSIUu6VHaZa52r1zccYko3vQroUwOOvjJKS5DGLKtB9w21pZ1E4iw65Its9eX4eRpxWx6Mb6+4A5AwwB6jg2vWojsARdV6F1Nn2odaf279vBMaWMtFTLUq/f1Sfy4qpZZLKC6/SMEvHsm7eIfUnxVK3B7det6eoNS8rG6h96SxmTJEbfwgBri/oBXxMFVVDG5TJyiy8dWT5qCoJ7SKtRK9SZWDxAdpotspiEquSyMCvidSirNkYVEh5BLhoIB5k1u5UUTuSIFu0xir60+H1midmKD7rkN+ZPVvj3J9I6KmMV6aTy6sPkFntn44ajEsyo3JRmwTyboCAp+o593nkbf44lXD6e4z84hQ4kOwbl79yAb4IPx9TlfUsIe3ZqrVPUmNmj2jh+kxwQ/gUm6+6lwO3tM59K7wACiXyNjYGqxypWoHvjmoHxWdCYaynjJIVyrMNA4ZEyw9a3YSwaqYJDKbMvsU3cV6Y="
