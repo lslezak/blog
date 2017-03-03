@@ -1,4 +1,8 @@
 source "https://rubygems.org"
 
-# FIXME: drop this fat bundle, inslall only the really needed dependencies
-gem "github-pages"
+gem "jekyll"
+gem "jekyll-feed"
+gem "jekyll-sass-converter"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
+gem "jemoji"
