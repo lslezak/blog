@@ -18,6 +18,6 @@ This is my personal blog, it is published at https://blog.ladslezak.cz/.
 I use the [free Firebase hosting service](https://firebase.google.com/) for
 publishing the blog.
 
-- Build the pages locally
-- Run `firebase deploy`
-- See more details in the [deploy documentation](https://firebase.google.com/docs/hosting/deploying)
+The blog is built and deployed automatically by [Travis](https://travis-ci.org),
+see the [Travis Firebase deployment documentation](
+https://docs.travis-ci.com/user/deployment/firebase/).
