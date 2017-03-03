@@ -3,6 +3,7 @@ layout: post
 title: Editing a Screencast in Gimp
 category: Linux
 tags: [ screencast ]
+description: How to edit an animated GIF?
 ---
 
 # Editing Screencast
