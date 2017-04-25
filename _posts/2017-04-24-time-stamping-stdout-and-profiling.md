@@ -60,8 +60,10 @@ The alternative approach is simply to add the `puts` call somewhere in the teste
 code. So you can measure how long it takes to reach this specific point.
 Using the usual bisect approach you can find the problematic place quite quickly.
 
-In this case the problematic place was surprisingly calling `sleep(500)` 
-functions which obviously adds 500ms to the test time. The fix was easy, simply
+In this case the problematic place was surprisingly calling the `sleep(500)`
+function [here](
+https://github.com/yast/yast-s390/blob/48b302032d55b2961d4645f0e2a2dece597dcdaf/src/modules/DASDController.rb#L641)
+which obviously adds 500ms to the test time. The fix was easy, simply
 mock the `sleep` call in the test and return immediately.
 
 The result is that the *Write* test now also takes few miliseconds just like
