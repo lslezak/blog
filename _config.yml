@@ -19,7 +19,7 @@ kramdown:
 permalink: /:year/:month/:day/:title/
 
 # generate sitemap.xml and feed.xml automatically by plugins, enable GFM emoji
-gems:
+plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
