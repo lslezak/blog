@@ -19,6 +19,9 @@ So instead of having direct Cucumber support in the UI I proposed implementing
 a generic REST API. The API can be then used by any framework (Cucumber, RSpec...)
 or it can be used directly by any script or tool.
 
+See also the [Hackweek project page](
+https://hackweek.suse.com/16/projects/controlling-and-testing-the-yast-ui-remotely-for-integration-tests-openqa).
+
 ## Implementation
 
 The current solution is based on these two key libraries:
