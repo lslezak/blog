@@ -4,7 +4,7 @@ sudo: false
 
 language: ruby
 rvm:
-  - 2.2
+  - 2.5
 
 env:
   # nokogiri speed up: use the system libxml2, do not compile the bundled version
