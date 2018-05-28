@@ -108,5 +108,5 @@ and that's it!
 
 ## Conclusion
 
-The conference was really good and I'd like say thank you to the presenters, the
+The conference was really good and I'd like to say thank you to the presenters, the
 organization team and the sponsors to make this happen!
