@@ -106,7 +106,7 @@ and that's it!
 {% include blog_img.md alt="Portainer" src="portainer.png"
    full_img="portainer.png" %}
 
-## Conslusion 
+## Conclusion
 
 The conference was really good and I'd like say thank you to the presenters, the
 organization team and the sponsors to make this happen!
