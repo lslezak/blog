@@ -26,7 +26,7 @@ the schedule link above.
   https://events.opensuse.org/conference/oSC18/program/proposal/1678).
 
 - The [package dependencies can be improved](
-  https://events.opensuse.org/conference/oSC18/program/proposal/1864))
+  https://events.opensuse.org/conference/oSC18/program/proposal/1864)
   using `Supplements` dependency this way:
 
   ```
