@@ -32,3 +32,5 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor/
+  - .tags
+  - .tags1
