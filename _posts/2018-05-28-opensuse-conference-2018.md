@@ -94,9 +94,9 @@ for managing the Docker containers. And obviously it is provided as a Docker
 image.
 
 What is nice that starting it is basically a matter of running two commands:
-```console
-# docker volume create portainer_data
-# docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock \
+```shell
+docker volume create portainer_data
+docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock \
   -v portainer_data:/data portainer/portainer
 ```
 
