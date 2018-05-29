@@ -8,6 +8,8 @@ description: Some interesting topics and notes from the conference.
 
 # The openSUSE Conference 2018
 
+{% include blog_img.md alt="Venue" src="small_20180525_132631.jpg" %}
+
 I visited the openSUSE conference this year, it took place in Prague, at the
 same place as few years ago. You can check the schedule and the list of the
 talks [here](https://events.opensuse.org/conference/oSC18/schedule).
