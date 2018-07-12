@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hackweek 15 - the YaST Integration Tests
-category: YaST
+category: Hackweek
 tags: [ Linux, YaST, Hackweek, testing ]
 description: Controlling and inspecting the YaST UI remotely.
 
